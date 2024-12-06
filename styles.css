@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 0;
+}
+/* logo section */
+.logo {
+  display: flex;    
+  align-items: center;
+  height: auto;
+  border: none;
+  margin-right: auto;
+  margin-left: -12px;
+}
+/* Navigation section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004f73;
+  z-index: 1;
+  height: 80px;
+  position: relative;
+}
+.navbar a {
+  padding: 8px 12px;
+  text-decoration: none; 
+  font-weight: 600; 
+}
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: rgba(233, 229, 226, 0.678);
+  display: inline-block;
+  display: flex; align-items: center; justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+.navbar a:hover {
+  background-color: #c0b1b1;
+  color: white;
+}
+.nav-links { 
+  display: flex; 
+}
+.navbar .nav-links {
+  display: flex;
+}
+.navbar .nav-links a {
+  font-size: 20px; 
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.nav-image img{
+  background-color: white;
+  width: 50%;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  height: 80px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;  
+}
+.hamburger div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 2px 0;
+}
+
+/* UTILS */
+footer {
+  padding: 2rem;
+  background-color: #004f73;
+  margin-top: 0;
+  bottom: 0;
+}
+
+/* HOME PAGE STYLING */
+
+.home-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-title {
+  display: none;
+}
+
+/* INTRODUCTION PAGE */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  line-height: 1rem;
+}
+
+.introduction img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.introduction p {
+  padding: 0 4rem;
+  line-height: 2rem;
+}
+
+.introduction .mobile {
+  display: none;
+}
+
+.intro-footer {
+  margin-top: 3rem;
+}
+
+/* BENEFIT SYTLING */
+.benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: start;
+}
+
+.benefit img {
+  height: 60vh;
+  width: 100%;
+}
+
+.benefit div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+/* CHALLENGES STYLING */
+.challenges img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.challenges div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  padding: 0 4rem;
+  font-weight: 600;
+  gap: 1.5rem;
+}
+
+.challenge-mobile {
+  display: none;
+}
+
+/* REFERENCES STYLING */
+.reference {
+  line-height: 2rem;
+  padding: 2rem;
+}
+
+.reference-header {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.reference-header h1 {
+  color: #004f73;
+  font-size: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.first-container {
+  width: 50%;
+}
+
+.first-container img {
+  width: 100%;
+}
+
+.first-container div {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.first-container div img {
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 2rem;
+}
+
+.second-container {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+}
+
+.second-container img {
+  width: 100%;
+}
+
+.second-container div img {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .home-footer {
+    display: none;
+  }
+
+  .home-image {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .home-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    color: #4caf50;
+    font-style: italic;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px #4caf50;
+    font-size: 1rem;
+  }
+
+  /* INTRODUCTION */
+  .introduction img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .introduction .desktop {
+    display: none;
+  }
+
+  .introduction .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introduction .mobile p {
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* BENEFIT */
+  .benefit img {
+    height: 60vh;
+    width: 100%;
+    object-position: cover;
+  }
+
+  /* CHALLENGES */
+  .challenges img {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .challenges div {
+    display: none;
+  }
+
+  .challenge-mobile {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  .challenge-mobile div {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  /* REFERENCES */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .second-container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .first-container {
+    width: 100%;
+  }
+
+  .first-container div img {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 2rem;
+  }
+
+  .second-container div img {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .logo-image {
+    height: 80px;
+    width: 81px;
+  } 
+  /* Navigation section */
+  .navbar .nav-links { 
+    display: none; 
+    flex-direction: column; 
+    width: 100%; 
+    height: 600px;
+    position: absolute; 
+    top: 80px;
+    left: 0; 
+    background-color: white;        
+    z-index: 1; 
+  }
+  .navbar .nav-links a {
+    text-align: center;
+    padding: 10px;
+  }
+  .navbar input[type="checkbox"] {
+    display: none;
+  }
+  .navbar input[type="checkbox"]:checked ~ .nav-links {
+      display: flex;
+  }
+  
+  /* Hamburger section */
+  .hamburger {
+    display: flex;
+  }
+ 
+}
+@media (min-width: 576px) {
+  /* Logo section */
+  .logo-image {
+    height: 80px;
+    width: 120px;
+  }
+}
+@media (min-width: 577px) {
+  .logo-image {
+    height: 80px;
+    width: 100px;
+  }
+  /* Navigation section */
+  .navbar .nav-links { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    width: auto;
+    height: auto; 
+    position: static; 
+    background-color: transparent; 
+  } 
+  .nav-links {
+    display: flex;
+  } 
+  .nav-links a { 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    padding: 8px 12px; 
+    height: 40px;
+    margin: 0 0px;
+    color: white;
+    justify-content: space-around; 
+  } 
+  .nav-links a:hover { 
+    background-color: #555; 
+    color: white; 
+  }
+  .navbar .nav-links a {
+    font-size: 10px; 
+  }
+  .nav-image img{
+    display: none;
+  }
+  
+  /* Hamburger section */
+  .hamburger {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* Logo section */
+  .logo-image {
+    height: 80px;
+    width: 140px;
+  } 
+  /* Navigation section */
+  .navbar .nav-links a {
+    font-size: 12px; 
+    font-weight: 100;
+    white-space: nowrap; 
+  }
+  .home-image {
+  }
+}
+@media (min-width: 992px) {
+  /* Logo section */
+  .logo-image {
+    height: 90px;
+    width: 180px;
+  } 
+  /* Navigation section */
+  .navbar {
+    height: 90px;  
+  }
+  .nav-links a {
+    padding: 10px 25px; 
+    margin: 0 20px;
+    white-space: nowrap; 
+  }
+  .navbar .nav-links a {
+    font-size: 12px; 
+  }
+}
+@media (min-width: 1200px) {
+  /* Logo section */
+  .logo-image {
+    height: 90px;
+    width: 200px;
+  } 
+  /* Navigation section */
+  
+  .navbar {
+    height: 90px;
+  }
+  .nav-links a {
+    padding: 10px 30px; 
+    margin: 0 35px;
+    height: auto;
+    white-space: nowrap;
+  }
+  .nav-links {
+    gap: 60px;
+  } 
+  .navbar .nav-links a {
+    font-size: 15px; 
+    margin: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  /* Logo section */
+  .logo-image {
+    height: 110px;
+    width: 250px;
+  } 
+  /* Navigation section */
+  .navbar {
+    height: 110px; 
+  } 
+  .nav-links {
+    gap: 70px;
+  } 
+  .nav-links a {
+    padding: 10px 30px; 
+    margin: 0 55px;
+    white-space: nowrap;
+  }
+  .navbar .nav-links a {
+    font-size: 20px; 
+    margin: 10px;
+  }
+}
