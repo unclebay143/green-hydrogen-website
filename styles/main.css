@@ -81,7 +81,7 @@ body {
   align-items: center;
   justify-content: center;  
 }
-.hamburger div {
+.hamburger span {
   width: 20px;
   height: 3px;
   background-color: black;
@@ -289,7 +289,7 @@ footer {
   .benefit img {
     height: 60vh;
     width: 100%;
-    object-position: cover;
+    object-fit: cover;
   }
 
   /* CHALLENGES */
