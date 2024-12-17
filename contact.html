@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Navigation section -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html" >
+                <img src="./images/logo.png" alt="brand logo"  class="logo-image">
+            </a>
+        </div>
+       
+        <input type="checkbox" id="toggle">
+        <label class="hamburger" for="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="./index.html" >HOME</a> 
+          <a href="./introduction.html">INTRODUCTION</a> 
+          <a href="./benefit.html" >BENEFITS</a>
+          <!-- <a href="./challenges.html" >CHALLENGES</a> -->
+          <a href="#">CONTACT US</a>
+          <a href="./references.html">REFERENCE</a>
+        </div>
+    </nav>
+    <!-- Navigation section //end -->
+
+    <!-- Hero image -->
+     <div class="contact">
+        <img src="./images/challenges-image.png" alt="green-hydrogen">
+     </div>
+    <!-- Hero section //ends -->
+
+    <!-- Form section -->
+     <!-- Contact Section -->
+    <section class="contact-section">
+        <h3>Other Contact Information</h3>
+        <div class="contact-container">
+    
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div>
+                    <div class="phone-call">
+                        <div class="icon">
+                            <i data-feather="phone-call"></i>
+                        </div>
+                        <div class="text">
+                            <p>+234 9060065309</p>
+                        </div>
+                    </div>
+                
+                    <div class="message-square">
+                        <div class="icon">
+                            <i data-feather="message-square"></i>
+                        </div>
+                        <div class="text">
+                            <p>
+                                mjaylabbio2023@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <div class="text">
+                            <p>Social Media</p>
+                        </div>
+                    
+                        <div class="icon">
+                            <i data-feather="twitter"></i>
+                            <i data-feather="facebook"></i>
+                            <i data-feather="instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+        
+                <!-- <button type="submit" class="submit-btn">Submit</button> -->
+                </form>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Form section ends -->
+
+      <footer class="home-footer">
+        <div class="footer-text">
+          <h1>COPYRIGHT 2024 JIMOH</h1>
+        </div>
+      </footer>
+    
+      <script>
+        feather.replace();
+      </script>
+</body>
+</html>

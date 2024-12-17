@@ -52,7 +52,7 @@ body {
   height: 60px;
 }
 .navbar a:hover {
-  color: white;
+  color: rgb(172, 164, 164);
 }
 .nav-links { 
   display: flex; 
@@ -94,13 +94,18 @@ footer {
   bottom: 0;
 }
 
+.footer-text {
+  display: flex;
+  justify-content: right;
+  color: white;
+  font-size: 12px;
+}
+
 /* HOME PAGE STYLING */
 
 .home-image {
   height: 100vh;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .home-title {
@@ -118,8 +123,6 @@ footer {
 .introduction img {
   height: 80vh;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .introduction p {
@@ -177,6 +180,138 @@ footer {
 .challenge-mobile {
   display: none;
 }
+/* CONTACT STYLING */
+.contact img {
+  height: 50vh;
+  width: 100%;
+  object-position: center;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  
+}
+.contact-section h3 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid ;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Information */
+.contact-info h3 {
+  margin-bottom: 10px;
+  color: #004f73;
+}
+/* Phone call icon */
+.phone-call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 36px; 
+}
+
+.phone-call .icon {
+  font-size: 24px; 
+}
+
+.phone-call .text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Message icon */
+.message-square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 60px;
+  text-align: center; 
+  gap: 36px; 
+}
+
+.message-square .icon {
+  font-size: 24px; 
+}
+
+.message-square .text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Social media icons */
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  gap: 36px; 
+}
+
+.social-media .icon {
+  font-size: 24px; 
+}
+
+.social-media .text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-info span {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Contact Form */
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
+}
+.contact-form .form-group {
+  margin-top: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 24px;
+}
+
+
+
 
 /* REFERENCES STYLING */
 .reference {
@@ -190,10 +325,39 @@ footer {
   margin-bottom: 2rem;
 }
 
-.reference-header h1 {
+.reference-header h2 {
   color: #004f73;
   font-size: 2rem;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ddd; 
+  padding: 12px; 
+  text-align: center;
+  vertical-align: middle; 
+}
+
+th {
+  background-color: #004f73; 
+  color: white; 
+}
+
+.reference img {
+  max-width: 150px; 
+  height: auto;
+}
+
+h1, p {
+  text-align: center; 
+}
+
+
 
 .image-container {
   display: flex;
@@ -239,6 +403,7 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  
   .home-footer {
     display: none;
   }
@@ -265,8 +430,6 @@ footer {
   .introduction img {
     height: 50vh;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
   }
 
   .introduction .desktop {
@@ -287,7 +450,6 @@ footer {
   .benefit img {
     height: 60vh;
     width: 100%;
-    object-fit: cover;
   }
 
   /* CHALLENGES */
@@ -348,6 +510,11 @@ footer {
 }
 
 @media (min-width: 375px) {
+  /* Navbar section */
+  .navbar{
+    background-color: whitesmoke;
+  }
+  /* Logo section */
   .logo-image {
     height: 80px;
     width: 81px;
@@ -389,6 +556,11 @@ footer {
   }
 }
 @media (min-width: 577px) {
+  /* Navbar section */
+  .navbar{
+    background-color: #004f73;
+  }
+  /* Logo section */
   .logo-image {
     height: 80px;
     width: 100px;
@@ -443,7 +615,17 @@ footer {
     font-weight: 100;
     white-space: nowrap; 
   }
-  .home-image {
+  .contact-section {
+    padding: 6px;
+  }
+  .contact-container {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1;
+    max-width: 48%;
   }
 }
 @media (min-width: 992px) {
@@ -463,6 +645,10 @@ footer {
   }
   .navbar .nav-links a {
     font-size: 12px; 
+  }
+  .contact-section {
+    padding: 0;
+    margin: 20px 200px;
   }
 }
 @media (min-width: 1200px) {
